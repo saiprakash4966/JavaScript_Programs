@@ -1,0 +1,20 @@
+<script>
+    function validate()
+    {
+      var number=document.myform.number.value;
+        if(NaN(number))
+        {
+            var number=document.getElementById("numloc").innerHTML=("enter numeric values only");
+            return false;
+        }
+        else{
+            return true;
+        }
+    }
+</script>
+<form name="my form" action="http://www.javatpoint.com/javascriptpages/valid.jsp" onsubmit="return validate()">
+    Password : <input type="text" name="number"/><span id ="numloc"></span></br>
+    <input type="submit"value="submit"/>
+
+
+</form>

@@ -1,0 +1,16 @@
+<script type="text/javascript">
+ function getDetails()
+ {
+    var lunch=document.getElementsByName("food");
+    alert("Available food :"+lunch.length);
+ }
+
+
+</script>
+<form>
+    Veg :<input type ="radio" name="food"value="veg"/>
+    Non-Veg :<input type="radio" name="food"value="non-Veg"/>
+    others:<input type="radio"name="food"value="Others"/>
+    <input type="button"onclick="getDetails()"value="Available food"/>
+</form>
+

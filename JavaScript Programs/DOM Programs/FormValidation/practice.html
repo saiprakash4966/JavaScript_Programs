@@ -1,0 +1,24 @@
+<script type="text/javascript">
+    function validate()
+    {
+        var fullname=document.myform.fullname.value;
+        var password=document.myform.password.value;
+
+        if(fullname==null|| fullname=="")
+        {
+         alert("name cannot empty");
+         return false;
+        } elseif(password==password.length>8)
+        {
+            alert("password must be 8 charcters long");
+            return false;
+        }
+        
+    }
+
+</script>
+<form name="myform" method="post" action="http://www.javatpoint.com/javascriptpages/valid.jspabc.jsp" onsubmit="return validate()">
+FullName : <input type="text" name="fullname"/></br>
+Password : <input type="password" name="password"/></br>
+<input type="submit"value="Login"/>
+</form>
